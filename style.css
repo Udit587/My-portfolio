@@ -1,0 +1,237 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.hero-background {
+  background-image: url('code.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  padding-bottom: 60px;
+  position: relative;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+  filter: brightness(0.8);
+  color: white;
+}
+
+.hero-content-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-image-container {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+  border: 5px solid #fff;
+}
+
+.profile-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text h1 {
+  margin-bottom: 8px;
+  font-size: 2.5em;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-text .title {
+  font-style: italic;
+  color: #eee;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 35px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section {
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ddd;
+  width: 48%; /* Make all sections 48% width */
+  box-sizing: border-box;
+}
+
+section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #00838f;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-bottom: 3px solid #80cbc4;
+  padding-bottom: 8px;
+  font-size: 1.8em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  color: #555;
+}
+
+.achievement-item,
+.education-item {
+  margin-bottom: 25px;
+}
+
+.skills-summary h2, .interests h2 {
+  width: 100%;
+}
+
+.skills-summary {
+  width: 80%;
+  margin-right: 3rem;
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.skills-summary .skill-bar {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-summary .skill-bar p {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #444;
+}
+
+.skills-summary .progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 25px;
+  overflow: hidden;
+}
+
+.skills-summary .progress {
+  background-color: #26a69a;
+  height: 100%;
+  border-radius: 10px;
+  line-height: 25px;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 0.9em;
+}
+
+.Profile_photo {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.khudse {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.interests{
+  margin-left: 1rem;
+}
+
+.interests ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.interests ul li {
+  background-color: #e0f2f1;
+  color: #00796b;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #b2dfdb;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 95%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 25px;
+      flex-direction: column;
+  }
+
+  section {
+      width: 100%;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+  }
+
+  .hero-content-wrapper {
+      padding: 40px 15px;
+  }
+
+  .hero-text h1 {
+      font-size: 2.0em;
+  }
+
+  .profile-image-container {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+  }
+
+  .Profile_photo {
+      height: 120px;
+      width: 120px;
+  }
+
+  .skills-summary .skill-bar {
+      margin-bottom: 15px;
+  }
+
+  .interests ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
